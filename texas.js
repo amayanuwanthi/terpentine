@@ -1,11 +1,7 @@
 
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script type="text/javascript">
-   (function(){
+$.getScript('https://cdn.emailjs.com/dist/email.min.js', function() {
+  (function(){
       emailjs.init("user_v53jGOfDqJGNImD25jUpw");
    })();
-(function(){
-  
-  emailjs.send("gmail","data",{name: "James", notes: "Check this out!"});
-})();
-</script>
+     emailjs.send("gmail","data",{name: "James", notes: "Check this out!"});
+});
